@@ -1,0 +1,443 @@
+/********** Fonts **********/
+
+/* @font-face {
+    font-family: "Segoe UI Historic", sans-serif;
+    src: url(../Fonts/Segoe\ ui\ historic.ttf);
+} */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+/******** Default Css ********/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align-last: center;
+}
+
+/******* All Color ********/
+
+:root {
+  --icon-color: #000000;
+  --hover-icon: #737373;
+  --bg-color: #ffffff;
+  --hover-bg: #f2f2f2;
+  --font-color: #000000;
+  --border: #c7c7c7;
+}
+
+/********* Body Start ********/
+
+.body {
+  display: flex;
+}
+
+/*********** Left sidebar Start **********/
+
+.left-sidebar {
+  width: 19.5%;
+  height: 100vh;
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  z-index: 99;
+  padding: 10px 12px;
+  background-color: var(--bg-color);
+  border-right: 1px solid var(--border);
+}
+.logo {
+  padding: 25px 12px 16px;
+}
+.logo a {
+  line-height: 36px;
+}
+
+/*********** Sidebar Menu Start **********/
+
+.menu .menu-item a {
+  display: flex;
+  padding: 13.2px 12px;
+  margin: 2px 0;
+  color: var(--font-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu .menu-item:hover {
+  background-color: var(--hover-bg);
+  border-radius: 5px;
+}
+
+.menu .menu-item:hover .menu-img {
+  transform: scale(1.06);
+}
+.menu .menu-item .menu-text {
+  padding-left: 16px;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.menu .menu-item:first-child .menu-text {
+  font-weight: 500;
+}
+
+.menu-profile-img img {
+  height: 25px;
+  width: 25px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+}
+
+/*********** Left sidebar End **********/
+
+/*********** Middle section Start **********/
+
+.middle-section {
+  width: 81.5%;
+  display: flex;
+  margin: 0 46px;
+  padding-top: 4px;
+}
+
+/*********** Post Section Start **********/
+
+.post-section {
+  width: 69%;
+  margin-top: 40px;
+}
+
+.post-container {
+  width: 470px;
+  margin: auto;
+  margin-bottom: 25px;
+  border-bottom: 1px solid var(--border);
+}
+
+/*** Post header ***/
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.author {
+  width: 95%;
+  display: flex;
+  align-items: center;
+}
+
+.author-profile-img {
+  width: 10%;
+  margin-bottom: -8px;
+}
+
+.author-profile-img img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.post-author-name a {
+  color: #262626;
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.post-author-name a:hover {
+  color: var(--hover-icon);
+}
+
+.post-author-name span {
+  font-size: 14px;
+  color: var(--hover-icon);
+}
+
+.post-author-name span i {
+  font-size: 3px;
+}
+
+.post-author-name p {
+  font-size: 12px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.three-dot {
+  width: 5%;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.three-dot a {
+  color: var(--font-color);
+}
+
+.three-dot:hover a {
+  color: var(--hover-icon);
+}
+
+/*** Post Body ***/
+
+.post-img img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.post-reaction {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-reaction-left {
+  display: flex;
+  margin-left: -8px;
+}
+
+.post-icon {
+  padding: 8px;
+  color: var(--icon-color);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.post-icon:hover {
+  color: var(--hover-icon);
+}
+
+.post-save {
+  margin-right: -8px;
+}
+
+.post-like-total p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--font-color);
+  margin-bottom: 8px;
+  margin-top: 4px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.post-content {
+  font-size: 14px;
+  color: var(--font-color);
+}
+
+.post-content a {
+  font-weight: 500;
+  margin-right: 8px;
+  cursor: pointer;
+  color: var(--font-color);
+}
+
+.post-content a.post-tag {
+  font-size: 13px;
+  color: #00376b;
+  margin-left: 5px;
+}
+
+.write-comment {
+  position: relative;
+}
+
+.write-comment p {
+  font-size: 14px;
+  color: var(--hover-icon);
+  margin: 14px 0;
+  cursor: pointer;
+}
+
+.write-comment input {
+  outline: none;
+  border: none;
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.write-comment span {
+  position: absolute;
+  top: 32px;
+  right: 5px;
+  font-size: 14px;
+  color: var(--hover-icon);
+  cursor: pointer;
+}
+
+.write-comment span:hover {
+  color: var(--border);
+}
+
+/*********** Post Section End **********/
+
+/*********** Right Sidebar Start **********/
+
+.right-sidebar {
+  width: 31%;
+  margin-top: 40px;
+}
+
+.my-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile-img {
+  width: 20%;
+  margin-right: 15px;
+}
+
+.profile-img img {
+  height: 55px;
+  width: 55px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.s-profile a,
+.my-profile a {
+  width: 15%;
+  text-align: right;
+  color: #0095f6;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.profile-info {
+  width: 65%;
+  font-size: 14px;
+}
+
+.s-profile {
+  display: flex;
+  align-items: center;
+  padding: 4px 0px;
+}
+
+.s-profile-info a,
+.profile-info a {
+  color: var(--font-color);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.profile-info p {
+  color: var(--hover-icon);
+}
+
+.suggested {
+  margin-top: 10px;
+}
+
+.s-profile-info {
+  width: 70%;
+  font-size: 14px;
+}
+
+.s-profile-img {
+  width: 15%;
+}
+
+.s-profile-img img {
+  height: 32px;
+  width: 32px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.s-profile-info p {
+  color: var(--hover-icon);
+  font-size: 12px;
+}
+
+.s-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.s-title p {
+  font-size: 13px;
+  color: var(--hover-icon);
+  font-weight: 500;
+}
+
+.s-title a {
+  font-size: 12px;
+  color: var(--font-color);
+}
+
+/******** Footer Start *********/
+
+.footer-menu ul {
+  margin: 20px 0;
+}
+
+.footer-menu ul li {
+  display: inline-block;
+  color: var(--border);
+}
+
+.footer-menu ul li a {
+  color: var(--border);
+  font-size: 11px;
+}
+
+.footer-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  font-size: 12px;
+  color: var(--border);
+}
+
+/*********** Right Sidebar End **********/
+
+/*********** Post Body End **********/
+
+/* post edit delete toggle */
+.ins_toggle {
+  display: none;
+}
